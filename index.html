@@ -28,27 +28,33 @@
       h: window.innerHeight,
       draw: function () {
         canvasCtx.fillStyle = "#286047"
-        canvasCtx.fillRect(0, 0, window.innerWidth, window.innerHeight)
+        canvasCtx.fillRect(0, 0, this.w, this.h)
+      }
+    }
+
+    const line = {
+      w: 15,
+      h: field.h,
+      draw: function () {
+        canvasCtx.fillStyle = "#fff"
+        canvasCtx.fillRect(
+          field.w / 2 - this.w / 2,
+          0,
+          this.w,
+          this.h
+        )
       }
     }
 
     function setup() {
-      canvasEl.width = canvasCtx.width = window.innerWidth
-      canvasEl.height = canvasCtx.height = window.innerHeight
+      canvasEl.width = canvasCtx.width = field.w
+      canvasEl.height = canvasCtx.height = field.h
     }
 
     function draw() {
       field.draw()
 
-      canvasCtx.fillStyle = "#fff"
-
-      // desenha a linha central
-      canvasCtx.fillRect(
-        window.innerWidth / 2 - lineWidht / 2,
-        0,
-        lineWidht,
-        window.innerHeight
-      )
+      line.draw()
 
       // desenha a raquete esquerda
       canvasCtx.fillRect(10, 400, lineWidht, 200)
