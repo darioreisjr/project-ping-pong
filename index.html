@@ -63,8 +63,19 @@
       h: 200,
       draw: function () {
         canvasCtx.fillStyle = "#fff"
-        canvasCtx.fillStyle = "#fff"
         canvasCtx.fillRect(this.x, this.y, this.w, this.h)
+      }
+    }
+
+    const ball = {
+      x: 300,
+      y: 200,
+      r: 20,
+      draw: function () {
+        canvasCtx.fillStyle = "#fff"
+        canvasCtx.beginPath()
+        canvasCtx.arc(this.x, this.y, this.r, 0, 2 * Math.PI, false)
+        canvasCtx.fill()
       }
     }
 
@@ -78,15 +89,8 @@
       line.draw()
       leftPaddle.draw()
       rightPaddle.draw()
+      ball.draw()
 
-
-      // desenha a raquete direita
-
-
-      //desenha a bolinha
-      canvasCtx.beginPath()
-      canvasCtx.arc(200, 300, 20, 0, 2 * Math.PI, false)
-      canvasCtx.fill()
 
       // desenhar o placar
       canvasCtx.font = "bold 72px Arial"
