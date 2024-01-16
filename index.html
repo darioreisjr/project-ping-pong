@@ -23,15 +23,22 @@
 
     const lineWidht = 15
 
+    const field = {
+      w: window.innerWidth,
+      h: window.innerHeight,
+      draw: function () {
+        canvasCtx.fillStyle = "#286047"
+        canvasCtx.fillRect(0, 0, window.innerWidth, window.innerHeight)
+      }
+    }
+
     function setup() {
       canvasEl.width = canvasCtx.width = window.innerWidth
       canvasEl.height = canvasCtx.height = window.innerHeight
     }
 
     function draw() {
-      // desenha o campo
-      canvasCtx.fillStyle = "#286047"
-      canvasCtx.fillRect(0, 0, window.innerWidth, window.innerHeight)
+      field.draw()
 
       canvasCtx.fillStyle = "#fff"
 
