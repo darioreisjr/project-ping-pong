@@ -120,8 +120,20 @@
             this._pointUp()
           }
         }
+
+        // verifica se o jogador 2 fez um ponto (x < 0)
+        if (this.x < this.r + leftPaddle.w + gapX) {
+          if (this.y + this.r > leftPaddle.y &&
+            this.y - this.r < leftPaddle.y + leftPaddle.h) {
+            this._reverseX()
+          } else {
+            score.increaseComputer()
+            this._pointUp()
+          }
+        }
+
+        // verifica as laterais superior e inferior do campo
         if (
-          // verifica as laterais superior e inferior do campo
           (this.y - this.r < 0 && this.directionY < 0) ||
           (this.y > field.h - this.r && this.directionY > 0)
         ) {
