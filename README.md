@@ -1,34 +1,57 @@
 <h1 align="center" style="font-weight: bold;">Projeto Ping-Pong 💻</h1>
 
 <p align="center">
- <a href="#tech">Technologies</a> • 
+ <a href="#tech">Tecnologias</a> • 
  <a href="#started">Getting Started</a> • 
   <a href="#colab">Collaborators</a> •
  <a href="#contribute">Contribute</a>
 </p>
 
 <p align="center">
-    <b>Simple description of what your project do or how to use it</b>
+    <b>Este projeto é um jogo de ping pong simples desenvolvido em HTML e JavaScript. O objetivo do jogo é acertar a bola na raquete do adversário para marcar pontos.</b>
 </p>
 
 <p align="center">
-     <a href="PROJECT__URL">📱 Visit this Project</a>
+     <a href="https://darioreisjr.github.io/project-ping-pong/">📱 Visite este Projeto</a>
 </p>
 
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center">
-   <img src="https://github.com/darioreisjr/project-ping-pong/assets/85812823/7888c3a5-85d7-4217-a410-50a56d19ee4f" alt="Image Example" width="800px">
+   <img src="https://github.com/darioreisjr/project-ping-pong/assets/85812823/706d5f4d-a849-4f89-a1fa-6ed837b26904" alt="Image Example" width="800px">
+
+
 </p>
 
-<h2 id="technologies">💻 Technologies</h2>
+<h2 id="tech">💻 Tecnologias</h2>
 
 - html
 - javascript
 
-<h2 id="started">🚀 Getting started</h2>
+<h2 id="started">🚀 Começando</h2>
 
-Here you describe how to run your project locally
+Este projeto é um jogo de ping pong simples desenvolvido em HTML e JavaScript. Ele foi criado para treinar lógica e conceitos básicos de programação.
+
+O jogo é jogado por dois jogadores, cada um controlando uma raquete. O objetivo é acertar a bola na raquete do oponente para marcar pontos. O jogo termina quando um jogador atinge 10 pontos.
+
+O jogo foi desenvolvido usando os seguintes conceitos:
+
+- HTML: O HTML é usado para definir o layout do jogo.
+- JavaScript: O JavaScript é usado para controlar a lógica do jogo.
+- Eventos: Os eventos são usados para controlar o comportamento do jogo, como mover as raquetes e acertar a bola.
+  
+Para jogar o jogo, basta abrir o arquivo index.html em um navegador da web.
+
+Requisitos
+
+Para executar este projeto, você precisará do seguinte:
+
+- Um navegador da web
+- O Node.js
+  
+Instalação
+
+Para instalar o Node.js, siga as instruções no site oficial: https://nodejs.org/en/
 
 <h3>Prerequisites</h3>
 
